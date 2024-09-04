@@ -1,0 +1,21 @@
+version: '3.9'
+
+services:
+  pds:
+    image: ghcr.io/bluesky-social/pds:0.4
+    restart: unless-stopped
+    ports:
+      -  172.17.0.1:41466:3000
+    env_file:
+      - ./.env
+    volumes:
+      - ./pds:/pds
+
+  watchtower:
+    image: containrrr/watchtower:latest
+    restart: unless-stopped
+    environment:
+      WATCHTOWER_CLEANUP: true
+      WATCHTOWER_SCHEDULE: "@midnight"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
