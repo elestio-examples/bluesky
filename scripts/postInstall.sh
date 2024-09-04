@@ -2,7 +2,7 @@
 set -o allexport; source .env; set +o allexport;
 
 echo "Waiting for software to be ready ..."
-sleep 30s;
+sleep 20s;
 
 INVITE_CODE=$(curl \
   --fail \
