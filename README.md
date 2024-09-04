@@ -13,3 +13,4 @@ Deploy PDS (Personal Data Server)  server with CI/CD on Elestio
 You can open PDS Server URL here:
 
     URL: https://[CI_CD_DOMAIN]
+    InviteCode: [INVITE_CODE]

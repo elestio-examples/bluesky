@@ -27,11 +27,6 @@ done < "$filename"
 
 rm post.txt
 
-generate_secret() {
-  LC_ALL=C tr -dc A-Za-z0-9 </dev/urandom | head -c 40 ; echo ''
-}
-
-SHARED_SECRET=$(generate_secret)
 
 cat << EOT >> ./.env
 SMTP_HOST=172.17.0.1:25
