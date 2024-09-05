@@ -1,6 +1,6 @@
 # PDS (Personal Data Server) CI/CD pipeline
 
-<a href="https://dash.elest.io/deploy?source=cicd&social=dockerCompose&url=https://github.com/elestio-examples/opnform"><img src="deploy-on-elestio.png" alt="Deploy on Elest.io" width="180px" /></a>
+<a href="https://dash.elest.io/deploy?source=cicd&social=dockerCompose&url=https://github.com/elestio-examples/pds"><img src="deploy-on-elestio.png" alt="Deploy on Elest.io" width="180px" /></a>
 
 Deploy PDS (Personal Data Server)  server with CI/CD on Elestio
 
