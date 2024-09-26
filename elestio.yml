@@ -51,3 +51,5 @@ lifeCycleConfig:
 webUI:
   - url: "https://[CI_CD_DOMAIN]"
     label: "PDS Server"
+    login: "superadmin"
+    password: "[ADMIN_PASSWORD]"
