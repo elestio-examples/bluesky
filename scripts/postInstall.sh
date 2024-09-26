@@ -18,3 +18,13 @@ INVITE_CODE=$(curl \
 cat << EOT >> ./.env
 INVITE_CODE=$INVITE_CODE
 EOT
+
+
+curl -X POST "https://$PDS_HOSTNAME/xrpc/com.atproto.server.createAccount" \
+     -H "Content-Type: application/json" \
+     -d '{
+         "email": "'$ADMIN_EMAIL'",
+         "password": "'$ADMIN_PASSWORD'",
+         "handle": "'superadmin.$PDS_HOSTNAME'",
+         "inviteCode": "'$INVITE_CODE'"
+     }'

@@ -12,9 +12,12 @@ Deploy PDS (Personal Data Server)  server with CI/CD on Elestio
 
 You can open PDS Server URL here:
 
-    URL: https://[CI_CD_DOMAIN]
-    InviteCode: [INVITE_CODE]
+- Visit https://bsky.app
+- Click on Sign In, replace the Bluesky `Hosting provider` with your own pds server url `[CI_CD_DOMAIN]` 
 
+        URL: https://[CI_CD_DOMAIN]
+        username: superadmin / [ADMIN_EMAIL]
+        password: [ADMIN_PASSWORD]
 
 Connecting to your PDS with the Bluesky app is possible. 
 
